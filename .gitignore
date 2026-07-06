@@ -1,0 +1,63 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+
+# Virtual environments
+.venv/
+venv/
+env/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# OS/editor
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# Local/private input data and generated outputs
+00_배분안/
+01_결과표_양식/
+10_개인별_결과표/
+20_기준자료/
+20_materials/
+30_검토산출물/
+40_전달패키지/
+*공시점검 데이터*/
+
+# Review and evidence file types. Keep real data out of the public repo.
+*.xlsx
+*.xls
+*.xlsm
+*.xlsb
+*.pdf
+*.hwp
+*.hwpx
+*.doc
+*.docx
+*.ppt
+*.pptx
+*.csv
+*.tsv
+*.zip
+*.7z
+*.rar
+*.parquet
+*.pkl
+*.sqlite
+*.db
+
+# Allow small fixtures if they are intentionally added later.
+!examples/**/*.csv
+!examples/**/*.tsv
+!sample_data/**/*.csv
+!sample_data/**/*.tsv
+!docs/**/*.csv
+!docs/**/*.tsv
