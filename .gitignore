@@ -30,6 +30,7 @@ Thumbs.db
 20_materials/
 30_검토산출물/
 40_전달패키지/
+web_runs/
 *공시점검 데이터*/
 
 # Review and evidence file types. Keep real data out of the public repo.

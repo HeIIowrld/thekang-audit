@@ -1,5 +1,6 @@
 beautifulsoup4==4.15.0
 charset-normalizer==3.4.7
+fastapi>=0.115
 ipykernel==7.3.0
 lxml==6.1.1
 msoffcrypto-tool==6.0.0
@@ -15,6 +16,8 @@ pypdf==6.14.2
 pytesseract==0.3.13
 pywin32==311; platform_system == "Windows"
 pyxlsb==1.0.10
+python-multipart>=0.0.9
 requests==2.34.2
 tqdm==4.68.3
+uvicorn>=0.30
 xlrd==2.0.2

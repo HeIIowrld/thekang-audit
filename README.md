@@ -59,6 +59,18 @@ python .\90_tools\run_review_pipeline.py --root . --use-existing-auto
 python .\90_tools\run_review_pipeline.py --root . --audit-only
 ```
 
+## 웹 UI
+
+자료 업로드와 담당자별 ZIP 다운로드가 필요한 경우 웹 UI를 실행합니다.
+
+```powershell
+python -m uvicorn web_app.app:app --reload --host 127.0.0.1 --port 8000
+```
+
+브라우저에서 `http://127.0.0.1:8000`을 열고 담당자 목록과 자료를 업로드하면 담당자별 다운로드 패키지가 생성됩니다. 해당 포트가 이미 사용 중이면 `--port 8001`처럼 다른 포트를 지정합니다. 업로드 자료와 생성 ZIP은 `web_runs/`에 저장되며 Git에는 포함되지 않습니다.
+
+자세한 사용법은 [docs/WEB_UI.md](docs/WEB_UI.md)를 참고하세요.
+
 ## 주요 산출물
 
 ```text
